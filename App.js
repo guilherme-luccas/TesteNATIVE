@@ -85,6 +85,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>League of Legends</Text>
+      <Text style={styles.subtitle}>Escolha um Campeão</Text>
+
       <ScrollView style={styles.view}>
         {!details ? (
           <MapChampions />
@@ -113,8 +115,13 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: "#BE5A04",
     fontSize: 40,
-    borderBottomWidth: 4,
-    borderBottomColor: "black",
+  },
+  subtitle: {
+    textAlign: "center",
+    marginBottom: 10,
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
   },
   view: {
     width: "100%",
